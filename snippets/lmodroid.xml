@@ -5,6 +5,10 @@
         fetch="https://github.com/LMODroid"
         revision="twelve" />
 
+    <remote name="lmodroid-device"
+        fetch="https://github.com/LMODroid-Devices"
+        revision="twelve" />
+
     <!-- Bootable -->
     <project path="bootable/recovery" name="platform_bootable_recovery" remote="lmodroid" />
 
@@ -27,7 +31,7 @@
     </project>
 
     <!-- Device -->
-    <project path="device/lmodroid/atv" name="LMODroid-Devices/device_lmodroid_atv" remote="lmodroid" />
+    <project path="device/lmodroid/atv" name="device_lmodroid_atv" remote="lmodroid-device" />
     <project path="device/lmodroid/sepolicy" name="platform_device_lmodroid_sepolicy" remote="lmodroid" />
     <project path="device/mediatek/sepolicy_vndr" name="platform_device_mediatek_sepolicy_vndr" remote="lmodroid" />
 
